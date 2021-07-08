@@ -14,7 +14,7 @@ public class MainActivity {
         file.createNewFile();
         PrintWriter pw = new PrintWriter(file);
         for (int i = 0; i < keysCount; i++) {
-            int RandomKeyID = (int) (Math.random() * 10 + 1); //fuck random now i hate this word
+            int RandomKeyID = (int) (Math.random() * 10 + 1);
             if (RandomKeyID > 3)
                 pw.println(RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + "-" + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + "-" + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol() + RandSymbols.RandomSymbol());
             else
